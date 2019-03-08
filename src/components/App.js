@@ -23,8 +23,8 @@ export default class App extends Component {
         <Fragment>
           <Header url={window.location.pathname} />
           <Switch>
-            <Route exact path={`/`} component={Home} />
-            <Route exact path={`/contact`} component={Contact} />
+            <Route exact path={`/fads`} component={Home} />
+            <Route exact path={`/fads/contact`} component={Contact} />
           </Switch>
           <Footer />
         </Fragment>
