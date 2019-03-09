@@ -34,20 +34,11 @@ export class Header extends React.Component {
             <nav>
               <ul>
                 <li>
-                  <Link to={`${this.props.url}`}>Home</Link>
+                  <Link to={`/`}>Home</Link>
                 </li>
                 <li>
-                  <Link to={`${this.props.url}contact`}>Contadsact</Link>
+                  <Link to={`/contact`}>Contadsact</Link>
                 </li>
-                {/* <li>
-                    <a href="onas.html">O NAS</a>
-                  </li>
-                  <li>
-                    <a href="praca.html">PRACA</a>
-                  </li>
-                  <li>
-                    <a href="uslugi.html">KONTAKT</a>
-                  </li> */}
               </ul>
             </nav>
           </div>
