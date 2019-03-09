@@ -7,7 +7,7 @@ export class Topics extends Component {
   render() {
     return (
       <div>
-        <h2>Topics</h2>
+        <h2>Topicss</h2>
         <ul>
           <li>
             <Link to={`${this.props.match.url}/rendering`}>
