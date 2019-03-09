@@ -28,8 +28,8 @@ export default class App extends Component {
           <Linkk />
 
           <hr />
-          <Route exact path="/" component={Home} />
-          <Route path="/topics" component={Topics} />
+          <Route exact path="/fads/" component={Home} />
+          <Route path="/fads/topics" component={Topics} />
         </Fragment>
       </Router>
     );
