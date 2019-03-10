@@ -9,10 +9,8 @@ module.exports = {
     path: path.resolve(__dirname, "docs")
   },
   devServer: {
-    publicPath: "/fads",
     historyApiFallback: true
   },
-
   module: {
     rules: [
       {
