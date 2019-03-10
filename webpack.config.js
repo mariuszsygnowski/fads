@@ -6,10 +6,10 @@ module.exports = {
   devtool: "source-map",
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "docs"),
-    publicPath: "/fads"
+    path: path.resolve(__dirname, "docs")
   },
   devServer: {
+    publicPath: "/fads",
     historyApiFallback: true
   },
 

@@ -37,7 +37,7 @@ export class Header extends React.Component {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Kon tack</Link>
+                  <Link to="/contact">Kontack</Link>
                 </li>
               </ul>
             </nav>
