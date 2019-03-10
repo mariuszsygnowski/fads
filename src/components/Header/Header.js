@@ -34,10 +34,10 @@ export class Header extends React.Component {
             <nav>
               <ul>
                 <li>
-                  <Link to="/fads">Homee</Link>
+                  <Link to="/">Homee</Link>
                 </li>
                 <li>
-                  <Link to="/fads/contact">Kontack</Link>
+                  <Link to="/contact">Kontack</Link>
                 </li>
               </ul>
             </nav>
