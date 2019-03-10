@@ -10,14 +10,7 @@ module.exports = {
     publicPath: "https://mariuszsygnowski.github.io/fads/"
   },
   devServer: {
-    contentBase: path.join(__dirname, "/"),
-    compress: true,
-    port: 9000,
-    watchContentBase: true,
-    watchOptions: {
-      poll: true
-    },
-    historyApiFallback: true
+    historyApiFallback: false
   },
   module: {
     rules: [
