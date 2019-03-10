@@ -20,7 +20,7 @@ export default class App extends Component {
     // console.log(window.location.pathname);
 
     return (
-      <Router>
+      <Router basename={"https://mariuszsygnowski.github.io/fads/"}>
         <Fragment>
           <Header />
 
