@@ -49,7 +49,7 @@ export class Header extends React.Component {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/contact" component={Contact} />
-                <Route render={() => <h1>404 Error</h1>} />
+                <Route render={() => <h1>404 Errror</h1>} />
               </Switch>
             </nav>
           </div>
