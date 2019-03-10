@@ -1,3 +1,4 @@
+__webpack_public_path__ = window.resourceBasePath;
 import autoBind from "auto-bind";
 import React, { Component, Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
@@ -22,10 +23,7 @@ export default class App extends Component {
       <Router>
         <Fragment>
           <Header />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/contact" component={Contact} />
-          </Switch>
+
           <Footer />
         </Fragment>
       </Router>

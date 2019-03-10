@@ -6,12 +6,20 @@ module.exports = {
   devtool: "source-map",
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "docs")
+    path: path.resolve(__dirname, "docs"),
+    publicPath: "/"
   },
   devServer: {
+    publicPath: "/",
+    contentBase: path.join(__dirname, "/"),
+    compress: true,
+    port: 9000,
+    watchContentBase: true,
+    watchOptions: {
+      poll: true
+    },
     historyApiFallback: true
   },
-
   module: {
     rules: [
       {
@@ -57,7 +65,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: path.resolve(__dirname, "src/index.html")
+      template: "src/index.html"
     })
   ]
 };
