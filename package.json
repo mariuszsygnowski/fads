@@ -13,6 +13,7 @@
             "babel-preset-react"
         ]
     },
+    "homepage": "https://mariuszsygnowski.github.io/fads/",
     "dependencies": {
         "auto-bind": "^2.0.0",
         "babel-core": "^6.26.3",
