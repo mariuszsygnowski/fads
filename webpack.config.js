@@ -10,7 +10,7 @@ module.exports = {
     publicPath: "/"
   },
   devServer: {
-    publicPath: "/",
+    publicPath: "/fads",
     historyApiFallback: true
   },
 
