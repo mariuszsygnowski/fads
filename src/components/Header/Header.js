@@ -15,7 +15,7 @@ export class Header extends React.Component {
     super(props);
   }
   render() {
-    // console.log(this.props);
+    console.log(this.props);
     return (
       <header>
         <div class="header_telephone_bar">
