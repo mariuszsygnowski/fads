@@ -1,7 +1,12 @@
 import React, { Fragment } from "react";
 import phoneSolid from "../../styles/images/phone-solid.svg";
 import logoSeniorCare from "../../styles/images/LogoSeniorCare.svg";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Redirect,
+  Route,
+  Link,
+  Switch
+} from "react-router-dom";
 import { Contact } from "../Main/Contact";
 import { Home } from "../Main/Home";
 
@@ -10,6 +15,7 @@ export class Header extends React.Component {
     super(props);
   }
   render() {
+    console.log(this.props);
     return (
       <header>
         <div class="header_telephone_bar">
@@ -37,13 +43,14 @@ export class Header extends React.Component {
                   <Link to="/">Homee</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Kontack</Link>
+                  <Link to="/contact">Kontack </Link>
                 </li>
               </ul>
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/contact" component={Contact} />
-                <Route path="*" component={Home} />
+                <Route render={() => <h1>404 Error</h1>} />
+                <Redirect to="/" />
               </Switch>
             </nav>
           </div>
