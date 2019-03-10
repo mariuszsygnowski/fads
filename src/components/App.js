@@ -1,4 +1,4 @@
-__webpack_public_path__ = window.resourceBasePath;
+// __webpack_public_path__ = window.resourceBasePath;
 import autoBind from "auto-bind";
 import React, { Component, Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
@@ -20,7 +20,7 @@ export default class App extends Component {
     // console.log(window.location.pathname);
 
     return (
-      <Router basename={"/fads"}>
+      <Router>
         <Fragment>
           <Header />
 

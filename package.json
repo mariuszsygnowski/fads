@@ -2,6 +2,7 @@
     "name": "opieka-osob-starszych",
     "version": "1.0.0",
     "description": "Opieka osób starszych",
+    "main": "./src/index.js",
     "scripts": {
         "dev": "webpack-dev-server --mode development --open",
         "build": "webpack --mode production --display-modules"
@@ -13,7 +14,6 @@
             "babel-preset-react"
         ]
     },
-    "homepage": "./",
     "dependencies": {
         "auto-bind": "^2.0.0",
         "babel-core": "^6.26.3",

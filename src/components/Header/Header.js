@@ -15,7 +15,7 @@ export class Header extends React.Component {
     super(props);
   }
   render() {
-    console.log(this.props);
+    // console.log(this.props);
     return (
       <header>
         <div class="header_telephone_bar">
@@ -43,14 +43,13 @@ export class Header extends React.Component {
                   <Link to="/">Homee</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Kontack </Link>
+                  <Link to="/contact">Kontack</Link>
                 </li>
               </ul>
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/contact" component={Contact} />
                 <Route render={() => <h1>404 Error</h1>} />
-                <Redirect to="/" />
               </Switch>
             </nav>
           </div>
