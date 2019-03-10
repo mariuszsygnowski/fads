@@ -7,10 +7,9 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "docs"),
-    publicPath: "/"
+    publicPath: "/fads"
   },
   devServer: {
-    publicPath: "/fads",
     historyApiFallback: true
   },
 
