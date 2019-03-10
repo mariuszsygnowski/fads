@@ -1,15 +1,15 @@
 import React, { Fragment } from "react";
 import phoneSolid from "../../styles/images/phone-solid.svg";
 import logoSeniorCare from "../../styles/images/LogoSeniorCare.svg";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Contact } from "../Main/Contact";
+import { Home } from "../Main/Home";
 
 export class Header extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
-    console.log(`${this.props.url}contact`);
-
     return (
       <header>
         <div class="header_telephone_bar">
@@ -37,7 +37,7 @@ export class Header extends React.Component {
                   <Link to={`/`}>Home</Link>
                 </li>
                 <li>
-                  <Link to={`/contact`}>Contadsact</Link>
+                  <Link to={`/contact`}>Contadsasct</Link>
                 </li>
               </ul>
             </nav>

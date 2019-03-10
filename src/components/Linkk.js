@@ -8,10 +8,10 @@ export class Linkk extends React.Component {
     return (
       <ul>
         <li>
-          <Link to="/fads/">Home</Link>
+          <Link to="/">Homee</Link>
         </li>
         <li>
-          <Link to="/fads/topics">Topics</Link>
+          <Link to="/topics">Topics</Link>
         </li>
       </ul>
     );
