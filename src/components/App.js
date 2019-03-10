@@ -19,12 +19,12 @@ export default class App extends Component {
     // console.log(window.location.pathname);
 
     return (
-      <Router basename={"/fads"}>
+      <Router>
         <Fragment>
           <Header />
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/contact" component={Contact} />
+            <Route exact path="/fads" component={Home} />
+            <Route path="/fads/contact" component={Contact} />
           </Switch>
           <Footer />
         </Fragment>
