@@ -8,6 +8,10 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "docs")
   },
+  devServer: {
+    publicPath: "/docs/",
+    historyApiFallback: true
+  },
 
   module: {
     rules: [
